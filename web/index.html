@@ -3,672 +3,158 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Orthogonal Fourier Epicycles — India Outline</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      background-color: #05070d;
-      color: #e2e8f0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      overflow-x: hidden;
-      padding: 16px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 12px;
-    }
-    h1 {
-      font-family: "Georgia", "Times New Roman", serif;
-      font-size: 28px;
-      letter-spacing: 0.5px;
-      background: linear-gradient(90deg, #00d2d3 0%, #f5a623 50%, #ff6b6b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 4px;
-    }
-    p.subtitle {
-      color: #8892b0;
-      font-size: 13px;
-      letter-spacing: 0.2px;
-    }
-    .main-container {
-      position: relative;
-      width: 100%;
-      max-width: 540px;
-      aspect-ratio: 9 / 16;
-      background: #05070d;
-      border: 1px solid #1a2234;
-      border-radius: 12px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.8);
-      overflow: hidden;
-    }
-    canvas {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
-    .controls-panel {
-      width: 100%;
-      max-width: 540px;
-      background: #0a0f1d;
-      border: 1px solid #1f293d;
-      border-radius: 10px;
-      margin-top: 14px;
-      padding: 14px 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-    .control-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      font-size: 13px;
-    }
-    .control-row label {
-      color: #94a3b8;
-      min-width: 110px;
-      font-weight: 500;
-    }
-    .control-row input[type="range"] {
-      flex: 1;
-      accent-color: #ff6b6b;
-      cursor: pointer;
-    }
-    .val-display {
-      font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
-      color: #00d2d3;
-      min-width: 55px;
-      text-align: right;
-    }
-    .button-group {
-      display: flex;
-      gap: 8px;
-      margin-top: 4px;
-    }
-    button {
-      flex: 1;
-      padding: 8px 14px;
-      background: #141e33;
-      color: #f1f5f9;
-      border: 1px solid #283756;
-      border-radius: 6px;
-      font-size: 12px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    button:hover {
-      background: #1e2c4a;
-      border-color: #00d2d3;
-    }
-    button.active {
-      background: #00d2d3;
-      color: #05070d;
-      border-color: #00d2d3;
-    }
-    .drop-zone {
-      margin-top: 8px;
-      padding: 8px;
-      border: 1px dashed #2d3c58;
-      border-radius: 6px;
-      text-align: center;
-      font-size: 11px;
-      color: #64748b;
-      cursor: pointer;
-    }
-    .drop-zone:hover {
-      border-color: #f5a623;
-      color: #94a3b8;
-    }
-  </style>
+  <title>Orthogonal Fourier Epicycles — World Atlas Edition</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌍</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
 </head>
 <body>
+  <div class="app-container">
+    <!-- Left Country Selector Panel -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <h1 class="brand-title">Fourier Atlas</h1>
+        <p class="brand-subtitle">Orthogonal Epicycles</p>
+      </div>
 
-  <header>
-    <h1>Orthogonal Fourier Epicycles</h1>
-    <p class="subtitle">Closed outline drawn by independent <i>x(t)</i> &amp; <i>y(t)</i> harmonics</p>
-  </header>
+      <div class="search-box-container">
+        <div class="search-input-wrapper">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search country or code..."
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+      </div>
 
-  <div class="main-container" id="container">
-    <canvas id="viewCanvas"></canvas>
+      <div class="continent-chips">
+        <button class="chip-btn active" data-continent="All">All</button>
+        <button class="chip-btn" data-continent="Asia">Asia</button>
+        <button class="chip-btn" data-continent="Europe">Europe</button>
+        <button class="chip-btn" data-continent="Africa">Africa</button>
+        <button class="chip-btn" data-continent="North America">N. America</button>
+        <button class="chip-btn" data-continent="South America">S. America</button>
+        <button class="chip-btn" data-continent="Oceania">Oceania</button>
+        <button class="chip-btn" data-continent="Continents">Continents</button>
+        <button class="chip-btn" data-continent="World">World</button>
+      </div>
+
+      <div class="map-list" id="mapListContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </aside>
+
+    <!-- Main Visualizer Area -->
+    <main class="main-stage">
+      <!-- Top HUD Bar -->
+      <header class="hud-bar">
+        <div class="hud-left">
+          <span class="current-map-title" id="hudMapTitle">India</span>
+          <div class="hud-badges">
+            <span class="metric-pill teal" id="hudN">N = 120</span>
+            <span class="metric-pill coral" id="hudError">error = 0.05%</span>
+            <span class="metric-pill gold" id="hudRingStatus" style="display: none;">Part 1 of 1</span>
+          </div>
+        </div>
+
+        <div class="math-hud-container">
+          <div class="equation-item" id="hudEqX"></div>
+          <div class="equation-item" id="hudEqY"></div>
+          <div class="equation-item" id="hudEqP"></div>
+        </div>
+      </header>
+
+      <!-- Canvas Viewport -->
+      <div class="viewport-container" id="canvasContainer">
+        <canvas id="epicycleCanvas"></canvas>
+      </div>
+
+      <!-- Bottom Controls Dock -->
+      <footer class="controls-dock">
+        <!-- Top controls row: Sliders, Play/Pause, Random, Actions -->
+        <div class="controls-row">
+          <div class="control-group">
+            <button class="btn btn-primary" id="btnPlayPause">⏸ Pause</button>
+            <button class="btn btn-secondary" id="btnReset" title="Clear drawn path (C)">↺ Reset</button>
+            <button class="btn btn-secondary" id="btnRandom" title="Pick random country (R)">🎲 Random</button>
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Harmonics (N):</span>
+            <button class="btn btn-secondary btn-icon" id="btnNMinus" title="Decrease N (-)">-10</button>
+            <div class="slider-container">
+              <input type="range" id="sliderN" min="1" max="500" value="120" step="1" />
+              <span class="slider-val" id="valN">120</span>
+            </div>
+            <button class="btn btn-secondary btn-icon" id="btnNPlus" title="Increase N (+)">+10</button>
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Speed:</span>
+            <div class="slider-container">
+              <input type="range" id="sliderSpeed" min="0.1" max="4.0" value="1.0" step="0.1" />
+              <span class="slider-val" id="valSpeed">1.0x</span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <span class="control-label">Detail:</span>
+            <select class="select-input" id="selectDetail">
+              <option value="all" selected>All rings</option>
+              <option value="large">Main + large islands</option>
+              <option value="main">Main landmass only</option>
+            </select>
+          </div>
+
+          <div class="control-group">
+            <button class="btn btn-secondary" id="btnLeaderboard" title="View Shape Complexity (L)">🏆 Leaderboard</button>
+            <button class="btn btn-secondary btn-icon" id="btnTheme" title="Toggle Theme (T)">🌓</button>
+          </div>
+        </div>
+
+        <!-- Bottom controls row: Toggles & Exports -->
+        <div class="controls-row">
+          <div class="control-group">
+            <label class="toggle-item">
+              <input type="checkbox" id="toggleCircles" checked />
+              <span>Epicycles</span>
+            </label>
+            <label class="toggle-item">
+              <input type="checkbox" id="toggleProjections" checked />
+              <span>Dashed Guides</span>
+            </label>
+            <label class="toggle-item">
+              <input type="checkbox" id="toggleLanczos" />
+              <span>Lanczos Smoothing</span>
+            </label>
+            <label class="toggle-item">
+              <input type="checkbox" id="toggleSilhouette" />
+              <span>Silhouette</span>
+            </label>
+            <label class="toggle-item">
+              <input type="checkbox" id="toggleGroundTruth" />
+              <span>Ground Truth</span>
+            </label>
+            <label class="toggle-item">
+              <input type="checkbox" id="toggleAutoSweep" />
+              <span>Auto N-Sweep</span>
+            </label>
+          </div>
+
+          <div class="control-group">
+            <button class="btn btn-secondary" id="btnExportPNG" title="Download Canvas PNG">📸 Screenshot</button>
+            <button class="btn btn-secondary" id="btnRecordWebM" title="Record WebM Video">⏺ Record WebM</button>
+            <button class="btn btn-secondary" id="btnExportJSON" title="Download Fourier JSON">📄 JSON</button>
+            <button class="btn btn-secondary" id="btnExportCSV" title="Download Harmonics CSV">📊 CSV</button>
+          </div>
+        </div>
+      </footer>
+    </main>
   </div>
 
-  <div class="controls-panel">
-    <div class="control-row">
-      <label for="sliderN">Harmonics (N):</label>
-      <input type="range" id="sliderN" min="1" max="1000" value="1000" step="1">
-      <span class="val-display" id="dispN">1000</span>
-    </div>
-
-    <div class="control-row">
-      <label for="sliderSpeed">Orbit Speed:</label>
-      <input type="range" id="sliderSpeed" min="0.1" max="3.0" value="1.0" step="0.1">
-      <span class="val-display" id="dispSpeed">1.0x</span>
-    </div>
-
-    <div class="control-row">
-      <label for="sliderCircles">Visible Circles:</label>
-      <input type="range" id="sliderCircles" min="1" max="50" value="25" step="1">
-      <span class="val-display" id="dispCircles">25</span>
-    </div>
-
-    <div class="button-group">
-      <button id="btnPlayPause" class="active">Pause</button>
-      <button id="btnToggleCircles">Hide Circles</button>
-      <button id="btnReverse">Reverse Dir</button>
-      <button id="btnReset">Reset Orbit</button>
-    </div>
-
-    <div class="drop-zone" id="dropZone">
-      Drop black &amp; white silhouette PNG here to vectorize custom outline
-      <input type="file" id="fileInput" accept="image/*" style="display:none;">
-    </div>
-  </div>
-
-  <script>
-    (async function() {
-      const canvas = document.getElementById("viewCanvas");
-      const ctx = canvas.getContext("2d");
-      const container = document.getElementById("container");
-
-      const sliderN = document.getElementById("sliderN");
-      const dispN = document.getElementById("dispN");
-      const sliderSpeed = document.getElementById("sliderSpeed");
-      const dispSpeed = document.getElementById("dispSpeed");
-      const sliderCircles = document.getElementById("sliderCircles");
-      const dispCircles = document.getElementById("dispCircles");
-      const btnPlayPause = document.getElementById("btnPlayPause");
-      const btnToggleCircles = document.getElementById("btnToggleCircles");
-      const btnReverse = document.getElementById("btnReverse");
-      const btnReset = document.getElementById("btnReset");
-
-      let width = 540, height = 960;
-      let dpr = window.devicePixelRatio || 1;
-
-      function resize() {
-        const rect = container.getBoundingClientRect();
-        width = rect.width;
-        height = rect.height;
-        canvas.width = width * dpr;
-        canvas.height = height * dpr;
-        ctx.scale(dpr, dpr);
-      }
-      window.addEventListener("resize", resize);
-      resize();
-
-      let data = null;
-      try {
-        const resp = await fetch("coefficients.json");
-        data = await resp.json();
-      } catch (e) {
-        console.warn("Could not load coefficients.json directly, attempting fallback...");
-      }
-
-      let isPlaying = true;
-      let showCircles = true;
-      let direction = 1;
-      let currentT = 0;
-      let activeN = parseInt(sliderN.value, 10);
-      let speedMult = parseFloat(sliderSpeed.value);
-      let maxVisibleCircles = parseInt(sliderCircles.value, 10);
-      let tracedPath = [];
-
-      sliderN.addEventListener("input", (e) => {
-        activeN = parseInt(e.target.value, 10);
-        dispN.textContent = activeN;
-        tracedPath = [];
-      });
-
-      sliderSpeed.addEventListener("input", (e) => {
-        speedMult = parseFloat(e.target.value);
-        dispSpeed.textContent = speedMult.toFixed(1) + "x";
-      });
-
-      sliderCircles.addEventListener("input", (e) => {
-        maxVisibleCircles = parseInt(e.target.value, 10);
-        dispCircles.textContent = maxVisibleCircles;
-      });
-
-      btnPlayPause.addEventListener("click", () => {
-        isPlaying = !isPlaying;
-        btnPlayPause.textContent = isPlaying ? "Pause" : "Play";
-        btnPlayPause.classList.toggle("active", isPlaying);
-      });
-
-      btnToggleCircles.addEventListener("click", () => {
-        showCircles = !showCircles;
-        btnToggleCircles.textContent = showCircles ? "Hide Circles" : "Show Circles";
-      });
-
-      btnReverse.addEventListener("click", () => {
-        direction *= -1;
-        btnReverse.textContent = direction === 1 ? "Reverse Dir" : "Forward Dir";
-        btnReverse.classList.toggle("active", direction === -1);
-      });
-
-      btnReset.addEventListener("click", () => {
-        currentT = 0;
-        tracedPath = [];
-      });
-
-      function getEstimatedError(n) {
-        if (!data || !data.error_table) return 0.02;
-        const keys = Object.keys(data.error_table).map(Number).sort((a,b)=>a-b);
-        let bestKey = keys[keys.length - 1];
-        for (let k of keys) {
-          if (k >= n) { bestKey = k; break; }
-        }
-        return data.error_table[bestKey];
-      }
-
-      function computeChain(t, origin, chainData, N_total, maxVis, isX) {
-        const total = Math.min(N_total, chainData.a ? chainData.a.length : (chainData.c ? chainData.c.length : 0));
-        const order = chainData.order;
-        const R = chainData.R;
-        const phi = chainData.phi;
-
-        const visCount = Math.min(maxVis, total);
-        const circles = [];
-        let curX = origin.x;
-        let curY = origin.y;
-
-        for (let i = 0; i < visCount; i++) {
-          const idx = order[i];
-          const k = idx + 1;
-          const radius = R[idx];
-          const angle = k * t - phi[idx];
-
-          let dx = 0, dy = 0;
-          if (isX) {
-            dx = radius * Math.cos(angle);
-            dy = radius * Math.sin(angle);
-          } else {
-            dx = radius * Math.sin(angle);
-            dy = -radius * Math.cos(angle); // Invert for Canvas coordinates where positive Y is down
-          }
-
-          const nextX = curX + dx;
-          const nextY = curY + dy;
-          circles.push({ cx: curX, cy: curY, r: radius, tx: nextX, ty: nextY });
-          curX = nextX;
-          curY = nextY;
-        }
-
-        // Add tail invisibly
-        for (let i = visCount; i < total; i++) {
-          const idx = order[i];
-          const k = idx + 1;
-          const radius = R[idx];
-          const angle = k * t - phi[idx];
-          if (isX) {
-            curX += radius * Math.cos(angle);
-            curY += radius * Math.sin(angle);
-          } else {
-            curX += radius * Math.sin(angle);
-            curY -= radius * Math.cos(angle); // Invert for Canvas coordinates
-          }
-        }
-
-        return { circles, tip: { x: curX, y: curY } };
-      }
-
-      let lastTime = performance.now();
-
-      function render(now) {
-        requestAnimationFrame(render);
-        const dt = (now - lastTime) / 1000;
-        lastTime = now;
-
-        if (isPlaying) {
-          // One full revolution every ~14 seconds at 1.0x
-          currentT += (2 * Math.PI / 14) * speedMult * direction * dt;
-          if (currentT >= 2 * Math.PI) {
-            currentT = currentT % (2 * Math.PI);
-          } else if (currentT < 0) {
-            currentT = (currentT % (2 * Math.PI)) + 2 * Math.PI;
-          }
-        }
-
-        ctx.fillStyle = "#05070d";
-        ctx.fillRect(0, 0, width, height);
-
-        if (!data) {
-          ctx.fillStyle = "#8892b0";
-          ctx.font = "14px monospace";
-          ctx.textAlign = "center";
-          ctx.fillText("Loading Fourier model...", width / 2, height / 2);
-          return;
-        }
-
-        // Layout Scaling
-        // India Outline placed at bottom-left: center (0.26 * width, 0.72 * height)
-        const outlineScale = width * 0.44;
-        const outlineCenter = { x: width * 0.27, y: height * 0.73 };
-
-        // X-Chain placed at top-left: x matches outlineCenter.x + a0*scale, y = 0.28*height
-        const a0 = data.x_chain.a0;
-        const c0 = data.y_chain.c0;
-        const xChainOrigin = { x: outlineCenter.x + a0 * outlineScale, y: height * 0.27 };
-
-        // Y-Chain placed at bottom-right: x = 0.75*width, y matches outlineCenter.y - c0*scale
-        const yChainOrigin = { x: width * 0.74, y: outlineCenter.y - c0 * outlineScale };
-
-        // Scaled chains
-        const scaledXChain = {
-          ...data.x_chain,
-          R: data.x_chain.R.map(r => r * outlineScale)
-        };
-        const scaledYChain = {
-          ...data.y_chain,
-          R: data.y_chain.R.map(r => r * outlineScale)
-        };
-
-        const xRes = computeChain(currentT, xChainOrigin, scaledXChain, activeN, maxVisibleCircles, true);
-        const yRes = computeChain(currentT, yChainOrigin, scaledYChain, activeN, maxVisibleCircles, false);
-
-        // Drawing Point P(t):
-        // Horizontal coordinate matches xRes.tip.x
-        // Vertical coordinate matches yRes.tip.y
-        const P = { x: xRes.tip.x, y: yRes.tip.y };
-
-        tracedPath.push({ ...P });
-        if (tracedPath.length > 2500) {
-          tracedPath.shift();
-        }
-
-        // 1. Draw Faint Ground Truth Silhouette
-        if (data.ground_truth && data.ground_truth.x) {
-          const gx = data.ground_truth.x;
-          const gy = data.ground_truth.y;
-          ctx.beginPath();
-          for (let i = 0; i < gx.length; i++) {
-            const px = outlineCenter.x + gx[i] * outlineScale;
-            const py = outlineCenter.y - gy[i] * outlineScale;
-            if (i === 0) ctx.moveTo(px, py);
-            else ctx.lineTo(px, py);
-          }
-          ctx.closePath();
-          ctx.fillStyle = "rgba(11, 18, 32, 0.75)";
-          ctx.fill();
-          ctx.strokeStyle = "rgba(22, 32, 53, 0.9)";
-          ctx.lineWidth = 1;
-          ctx.stroke();
-        }
-
-        // 2. Draw Traced Curve (Coral with Soft Glow)
-        if (tracedPath.length > 1) {
-          ctx.save();
-          ctx.shadowColor = "#ff6b6b";
-          ctx.shadowBlur = 10;
-          ctx.strokeStyle = "#ff6b6b";
-          ctx.lineWidth = 2.4;
-          ctx.beginPath();
-          ctx.moveTo(tracedPath[0].x, tracedPath[0].y);
-          for (let i = 1; i < tracedPath.length; i++) {
-            ctx.lineTo(tracedPath[i].x, tracedPath[i].y);
-          }
-          ctx.stroke();
-          ctx.restore();
-        }
-
-        // 3. Draw X-Chain (Teal)
-        if (showCircles) {
-          ctx.strokeStyle = "rgba(0, 210, 211, 0.45)";
-          ctx.fillStyle = "rgba(0, 210, 211, 0.7)";
-          ctx.lineWidth = 1.0;
-
-          xRes.circles.forEach(c => {
-            if (c.r > 1.0) {
-              ctx.beginPath();
-              ctx.arc(c.cx, c.cy, c.r, 0, 2 * Math.PI);
-              ctx.stroke();
-            }
-            ctx.beginPath();
-            ctx.moveTo(c.cx, c.cy);
-            ctx.lineTo(c.tx, c.ty);
-            ctx.stroke();
-          });
-        }
-
-        // Label X-Chain
-        ctx.fillStyle = "#00d2d3";
-        ctx.font = "italic 15px Georgia, serif";
-        ctx.textAlign = "center";
-        ctx.fillText("X(t) chain", xChainOrigin.x, xChainOrigin.y - outlineScale * 0.58);
-
-        // 4. Draw Y-Chain (Gold)
-        if (showCircles) {
-          ctx.strokeStyle = "rgba(245, 166, 35, 0.45)";
-          ctx.fillStyle = "rgba(245, 166, 35, 0.7)";
-          ctx.lineWidth = 1.0;
-
-          yRes.circles.forEach(c => {
-            if (c.r > 1.0) {
-              ctx.beginPath();
-              ctx.arc(c.cx, c.cy, c.r, 0, 2 * Math.PI);
-              ctx.stroke();
-            }
-            ctx.beginPath();
-            ctx.moveTo(c.cx, c.cy);
-            ctx.lineTo(c.tx, c.ty);
-            ctx.stroke();
-          });
-        }
-
-        // Label Y-Chain
-        ctx.fillStyle = "#f5a623";
-        ctx.font = "italic 15px Georgia, serif";
-        ctx.textAlign = "center";
-        ctx.fillText("Y(t) chain", yChainOrigin.x, yChainOrigin.y + outlineScale * 0.62);
-
-        // 5. Draw Orthogonal Dashed Lines
-        ctx.save();
-        ctx.setLineDash([4, 4]);
-
-        // Vertical cyan line from X tip to P(t)
-        ctx.strokeStyle = "rgba(0, 210, 211, 0.75)";
-        ctx.lineWidth = 1.2;
-        ctx.beginPath();
-        ctx.moveTo(xRes.tip.x, xRes.tip.y);
-        ctx.lineTo(P.x, P.y);
-        ctx.stroke();
-
-        // Horizontal gold line from Y tip to P(t)
-        ctx.strokeStyle = "rgba(245, 166, 35, 0.75)";
-        ctx.beginPath();
-        ctx.moveTo(yRes.tip.x, yRes.tip.y);
-        ctx.lineTo(P.x, P.y);
-        ctx.stroke();
-        ctx.restore();
-
-        // 6. Draw Glowing Drawing Point P(t)
-        ctx.save();
-        ctx.shadowColor = "#ff6b6b";
-        ctx.shadowBlur = 12;
-        ctx.fillStyle = "#ffffff";
-        ctx.beginPath();
-        ctx.arc(P.x, P.y, 4, 0, 2 * Math.PI);
-        ctx.fill();
-        ctx.strokeStyle = "rgba(255, 107, 107, 0.6)";
-        ctx.lineWidth = 2;
-        ctx.beginPath();
-        ctx.arc(P.x, P.y, 9, 0, 2 * Math.PI);
-        ctx.stroke();
-        ctx.restore();
-
-        // 7. Right-hand Stats & Math Equations Panel
-        const rightX = width * 0.75;
-        ctx.textAlign = "center";
-
-        // "N = 1000"
-        ctx.font = "italic 32px Georgia, serif";
-        ctx.fillStyle = "#ffffff";
-        ctx.fillText("N =", rightX - 35, height * 0.17);
-        ctx.fillStyle = "#ff6b6b";
-        ctx.font = "bold 32px Georgia, serif";
-        ctx.fillText(activeN, rightX + 28, height * 0.17);
-
-        // "error = 0.02%"
-        const currentErr = getEstimatedError(activeN);
-        ctx.fillStyle = "#e2e8f0";
-        ctx.font = "20px Georgia, serif";
-        ctx.fillText(`error = ${currentErr.toFixed(2)}%`, rightX, height * 0.22);
-
-        // Thin Divider
-        ctx.strokeStyle = "#1f293d";
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(rightX - 85, height * 0.25);
-        ctx.lineTo(rightX + 85, height * 0.25);
-        ctx.stroke();
-
-        // Equations
-        ctx.font = "14px Georgia, serif";
-
-        // x(t) in cyan
-        ctx.fillStyle = "#00d2d3";
-        ctx.fillText("x(t) = Σ (aₖ cos kt + bₖ sin kt)", rightX, height * 0.29);
-
-        // y(t) in gold
-        ctx.fillStyle = "#f5a623";
-        ctx.fillText("y(t) = Σ (cₖ cos kt + dₖ sin kt)", rightX, height * 0.33);
-
-        // P(t) in coral
-        ctx.fillStyle = "#ff6b6b";
-        ctx.font = "bold 14px Georgia, serif";
-        ctx.fillText("P(t) = (x(t), y(t))", rightX, height * 0.37);
-      }
-
-      requestAnimationFrame(render);
-
-      // Drag and Drop Client-Side Silhouette Parsing
-      const dropZone = document.getElementById("dropZone");
-      const fileInput = document.getElementById("fileInput");
-
-      dropZone.addEventListener("click", () => fileInput.click());
-      dropZone.addEventListener("dragover", (e) => { e.preventDefault(); dropZone.style.borderColor = "#00d2d3"; });
-      dropZone.addEventListener("dragleave", () => { dropZone.style.borderColor = "#2d3c58"; });
-      dropZone.addEventListener("drop", (e) => {
-        e.preventDefault();
-        dropZone.style.borderColor = "#2d3c58";
-        if (e.dataTransfer.files.length > 0) handleCustomImage(e.dataTransfer.files[0]);
-      });
-      fileInput.addEventListener("change", (e) => {
-        if (e.target.files.length > 0) handleCustomImage(e.target.files[0]);
-      });
-
-      function handleCustomImage(file) {
-        const reader = new FileReader();
-        reader.onload = function(evt) {
-          const img = new Image();
-          img.onload = function() {
-            processClientImageToEpicycles(img);
-          };
-          img.src = evt.target.result;
-        };
-        reader.readAsDataURL(file);
-      }
-
-      function processClientImageToEpicycles(img) {
-        // Render to hidden canvas and extract boundary
-        const offCanvas = document.createElement("canvas");
-        const w = 400, h = 400;
-        offCanvas.width = w;
-        offCanvas.height = h;
-        const octx = offCanvas.getContext("2d");
-        octx.drawImage(img, 0, 0, w, h);
-        const imgData = octx.getImageData(0, 0, w, h);
-        const pixels = imgData.data;
-
-        // Simple boundary tracing: find contour points
-        const points = [];
-        for (let y = 0; y < h; y += 2) {
-          let inShape = false;
-          for (let x = 0; x < w; x += 2) {
-            const idx = (y * w + x) * 4;
-            const lum = 0.299*pixels[idx] + 0.587*pixels[idx+1] + 0.114*pixels[idx+2];
-            const isWhite = lum > 128;
-            if (isWhite !== inShape) {
-              points.push({ x: (x - w/2)/(w/2), y: -(y - h/2)/(h/2) });
-              inShape = isWhite;
-            }
-          }
-        }
-        if (points.length < 50) {
-          alert("Silhouette did not have enough contrast or contour points.");
-          return;
-        }
-
-        // Sort radially around centroid for closure
-        let cx = points.reduce((s,p)=>s+p.x,0)/points.length;
-        let cy = points.reduce((s,p)=>s+p.y,0)/points.length;
-        points.sort((a,b)=>Math.atan2(a.y-cy, a.x-cx) - Math.atan2(b.y-cy, b.x-cx));
-
-        // Arc-length resample to M = 2048
-        const M = 2048;
-        const resX = new Float64Array(M);
-        const resY = new Float64Array(M);
-        for (let i = 0; i < M; i++) {
-          const idx = Math.floor((i / M) * points.length);
-          resX[i] = points[idx].x;
-          resY[i] = points[idx].y;
-        }
-
-        // Compute FFT client-side
-        const N_harm = Math.min(500, Math.floor(M/2));
-        const a = new Float64Array(N_harm), b = new Float64Array(N_harm);
-        const c = new Float64Array(N_harm), d = new Float64Array(N_harm);
-        let a0 = 0, c0 = 0;
-        for (let i = 0; i < M; i++) { a0 += resX[i]; c0 += resY[i]; }
-        a0 /= M; c0 /= M;
-
-        for (let k = 1; k <= N_harm; k++) {
-          let reX = 0, imX = 0, reY = 0, imY = 0;
-          for (let m = 0; m < M; m++) {
-            const angle = 2 * Math.PI * k * m / M;
-            const ca = Math.cos(angle), sa = Math.sin(angle);
-            reX += resX[m] * ca; imX -= resX[m] * sa;
-            reY += resY[m] * ca; imY -= resY[m] * sa;
-          }
-          a[k-1] = 2 * reX / M; b[k-1] = -2 * imX / M;
-          c[k-1] = 2 * reY / M; d[k-1] = -2 * imY / M;
-        }
-
-        const Rx = Array.from(a).map((ak,i)=>Math.hypot(ak, b[i]));
-        const phix = Array.from(a).map((ak,i)=>Math.atan2(b[i], ak));
-        const Ry = Array.from(c).map((ck,i)=>Math.hypot(ck, d[i]));
-        const phiy = Array.from(c).map((ck,i)=>Math.atan2(d[i], ck));
-
-        const orderX = Array.from({length:N_harm}, (_,i)=>i).sort((i,j)=>Rx[j]-Rx[i]);
-        const orderY = Array.from({length:N_harm}, (_,i)=>i).sort((i,j)=>Ry[j]-Ry[i]);
-
-        data = {
-          x_chain: { a0, a, b, R: Rx, phi: phix, order: orderX },
-          y_chain: { c0, c, d, R: Ry, phi: phiy, order: orderY },
-          ground_truth: { x: Array.from(resX).filter((_,i)=>i%4===0), y: Array.from(resY).filter((_,i)=>i%4===0) },
-          error_table: { "1": 3.5, "10": 0.8, "100": 0.08, "500": 0.02 }
-        };
-
-        tracedPath = [];
-        currentT = 0;
-        dispN.textContent = activeN;
-        sliderN.max = N_harm;
-      }
-    })();
-  </script>
+  <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

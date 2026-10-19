@@ -18,3 +18,13 @@ output/media/
 
 # OS artifacts
 .DS_Store
+
+# Node & Web Build
+node_modules/
+dist/
+.vite/
+
+# Raw geospatial data downloads (cached locally)
+data/raw/
+output/videos/
+output/media/

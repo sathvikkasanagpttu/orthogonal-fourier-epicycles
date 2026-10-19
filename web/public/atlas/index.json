@@ -1,0 +1,3252 @@
+[
+  {
+    "id": "WORLD",
+    "name": "World (All Land)",
+    "continent": "Global",
+    "aspect": 2.05,
+    "ring_count": 6,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "world.json",
+    "best_error": 0.0246
+  },
+  {
+    "id": "CONT_ANTARCTICA",
+    "name": "Continent: Antarctica",
+    "continent": "Continents",
+    "aspect": 1.2,
+    "ring_count": 1,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "continents/antarctica.json",
+    "best_error": 0.0078
+  },
+  {
+    "id": "CONT_OCEANIA",
+    "name": "Continent: Oceania",
+    "continent": "Continents",
+    "aspect": 1.2,
+    "ring_count": 5,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "continents/oceania.json",
+    "best_error": 0.0033
+  },
+  {
+    "id": "CONT_SOUTH-AMERICA",
+    "name": "Continent: South America",
+    "continent": "Continents",
+    "aspect": 1.2,
+    "ring_count": 12,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "continents/south-america.json",
+    "best_error": 0.0038
+  },
+  {
+    "id": "CONT_NORTH-AMERICA",
+    "name": "Continent: North America",
+    "continent": "Continents",
+    "aspect": 1.2,
+    "ring_count": 8,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "continents/north-america.json",
+    "best_error": 0.0068
+  },
+  {
+    "id": "CONT_EUROPE",
+    "name": "Continent: Europe",
+    "continent": "Continents",
+    "aspect": 1.2,
+    "ring_count": 13,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "continents/europe.json",
+    "best_error": 0.0131
+  },
+  {
+    "id": "CONT_ASIA",
+    "name": "Continent: Asia",
+    "continent": "Continents",
+    "aspect": 1.2,
+    "ring_count": 15,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "continents/asia.json",
+    "best_error": 0.0054
+  },
+  {
+    "id": "CONT_AFRICA",
+    "name": "Continent: Africa",
+    "continent": "Continents",
+    "aspect": 1.2,
+    "ring_count": 15,
+    "centroid": [
+      0.0,
+      0.0
+    ],
+    "file": "continents/africa.json",
+    "best_error": 0.05
+  },
+  {
+    "id": "ZWE",
+    "name": "Zimbabwe",
+    "continent": "Africa",
+    "aspect": 1.089,
+    "ring_count": 1,
+    "centroid": [
+      29.93,
+      -18.91
+    ],
+    "file": "maps/ZWE.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "ZMB",
+    "name": "Zambia",
+    "continent": "Africa",
+    "aspect": 1.148,
+    "ring_count": 1,
+    "centroid": [
+      26.4,
+      -14.66
+    ],
+    "file": "maps/ZMB.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "YEM",
+    "name": "Yemen",
+    "continent": "Asia",
+    "aspect": 1.712,
+    "ring_count": 2,
+    "centroid": [
+      45.87,
+      15.33
+    ],
+    "file": "maps/YEM.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "VNM",
+    "name": "Vietnam",
+    "continent": "Asia",
+    "aspect": 0.461,
+    "ring_count": 5,
+    "centroid": [
+      105.39,
+      21.72
+    ],
+    "file": "maps/VNM.json",
+    "best_error": 0.0021
+  },
+  {
+    "id": "VEN",
+    "name": "Venezuela",
+    "continent": "South America",
+    "aspect": 1.169,
+    "ring_count": 3,
+    "centroid": [
+      -64.6,
+      7.18
+    ],
+    "file": "maps/VEN.json",
+    "best_error": 0.002
+  },
+  {
+    "id": "VAT",
+    "name": "Vatican",
+    "continent": "Europe",
+    "aspect": 1.001,
+    "ring_count": 1,
+    "centroid": [
+      12.45,
+      41.9
+    ],
+    "file": "maps/VAT.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "VUT",
+    "name": "Vanuatu",
+    "continent": "Oceania",
+    "aspect": 0.497,
+    "ring_count": 14,
+    "centroid": [
+      166.91,
+      -15.37
+    ],
+    "file": "maps/VUT.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "UZB",
+    "name": "Uzbekistan",
+    "continent": "Asia",
+    "aspect": 1.529,
+    "ring_count": 2,
+    "centroid": [
+      64.01,
+      41.69
+    ],
+    "file": "maps/UZB.json",
+    "best_error": 0.0015
+  },
+  {
+    "id": "URY",
+    "name": "Uruguay",
+    "continent": "South America",
+    "aspect": 0.923,
+    "ring_count": 1,
+    "centroid": [
+      -55.97,
+      -32.96
+    ],
+    "file": "maps/URY.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "FSM",
+    "name": "Federated States of Micronesia",
+    "continent": "Oceania",
+    "aspect": 5.735,
+    "ring_count": 5,
+    "centroid": [
+      158.23,
+      6.89
+    ],
+    "file": "maps/FSM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MHL",
+    "name": "Marshall Islands",
+    "continent": "Oceania",
+    "aspect": 0.908,
+    "ring_count": 5,
+    "centroid": [
+      171.19,
+      7.08
+    ],
+    "file": "maps/MHL.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MNP",
+    "name": "Northern Mariana Islands",
+    "continent": "Oceania",
+    "aspect": 0.14,
+    "ring_count": 6,
+    "centroid": [
+      145.73,
+      15.19
+    ],
+    "file": "maps/MNP.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "VIR",
+    "name": "United States Virgin Islands",
+    "continent": "North America",
+    "aspect": 0.618,
+    "ring_count": 3,
+    "centroid": [
+      -64.78,
+      17.75
+    ],
+    "file": "maps/VIR.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "GUM",
+    "name": "Guam",
+    "continent": "Oceania",
+    "aspect": 0.777,
+    "ring_count": 1,
+    "centroid": [
+      144.7,
+      13.35
+    ],
+    "file": "maps/GUM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "ASM",
+    "name": "American Samoa",
+    "continent": "Oceania",
+    "aspect": 2.389,
+    "ring_count": 1,
+    "centroid": [
+      -170.75,
+      -14.33
+    ],
+    "file": "maps/ASM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "PRI",
+    "name": "Puerto Rico",
+    "continent": "North America",
+    "aspect": 4.365,
+    "ring_count": 3,
+    "centroid": [
+      -66.48,
+      18.23
+    ],
+    "file": "maps/PRI.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "USA",
+    "name": "United States",
+    "continent": "North America",
+    "aspect": 1.542,
+    "ring_count": 15,
+    "centroid": [
+      -97.48,
+      39.54
+    ],
+    "file": "maps/USA.json",
+    "best_error": 0.0068
+  },
+  {
+    "id": "SGS",
+    "name": "South Georgia and the Islands",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 1.47,
+    "ring_count": 2,
+    "centroid": [
+      -31.06,
+      -55.68
+    ],
+    "file": "maps/SGS.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "IOT",
+    "name": "British Indian Ocean Territory",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 0.688,
+    "ring_count": 1,
+    "centroid": [
+      71.35,
+      -6.19
+    ],
+    "file": "maps/IOT.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "SHN",
+    "name": "Saint Helena",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 1.037,
+    "ring_count": 2,
+    "centroid": [
+      -5.71,
+      -15.95
+    ],
+    "file": "maps/SHN.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "PCN",
+    "name": "Pitcairn Islands",
+    "continent": "Oceania",
+    "aspect": 0.613,
+    "ring_count": 1,
+    "centroid": [
+      -128.32,
+      -24.36
+    ],
+    "file": "maps/PCN.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "AIA",
+    "name": "Anguilla",
+    "continent": "North America",
+    "aspect": 1.742,
+    "ring_count": 1,
+    "centroid": [
+      -63.03,
+      18.24
+    ],
+    "file": "maps/AIA.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "FLK",
+    "name": "Falkland Islands / Malvinas",
+    "continent": "South America",
+    "aspect": 2.006,
+    "ring_count": 6,
+    "centroid": [
+      -58.74,
+      -51.61
+    ],
+    "file": "maps/FLK.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "CYM",
+    "name": "Cayman Islands",
+    "continent": "North America",
+    "aspect": 3.204,
+    "ring_count": 3,
+    "centroid": [
+      -81.24,
+      19.32
+    ],
+    "file": "maps/CYM.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "BMU",
+    "name": "Bermuda",
+    "continent": "North America",
+    "aspect": 1.292,
+    "ring_count": 1,
+    "centroid": [
+      -64.76,
+      32.3
+    ],
+    "file": "maps/BMU.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "VGB",
+    "name": "British Virgin Islands",
+    "continent": "North America",
+    "aspect": 1.131,
+    "ring_count": 3,
+    "centroid": [
+      -64.64,
+      18.43
+    ],
+    "file": "maps/VGB.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "TCA",
+    "name": "Turks and Caicos Islands",
+    "continent": "North America",
+    "aspect": 3.272,
+    "ring_count": 3,
+    "centroid": [
+      -71.75,
+      21.82
+    ],
+    "file": "maps/TCA.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MSR",
+    "name": "Montserrat",
+    "continent": "North America",
+    "aspect": 0.557,
+    "ring_count": 1,
+    "centroid": [
+      -62.19,
+      16.74
+    ],
+    "file": "maps/MSR.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "JEY",
+    "name": "Jersey",
+    "continent": "Europe",
+    "aspect": 1.529,
+    "ring_count": 1,
+    "centroid": [
+      -2.09,
+      49.22
+    ],
+    "file": "maps/JEY.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "GGY",
+    "name": "Guernsey",
+    "continent": "Europe",
+    "aspect": 1.117,
+    "ring_count": 1,
+    "centroid": [
+      -2.56,
+      49.46
+    ],
+    "file": "maps/GGY.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "IMN",
+    "name": "Isle of Man",
+    "continent": "Europe",
+    "aspect": 0.751,
+    "ring_count": 1,
+    "centroid": [
+      -4.53,
+      54.22
+    ],
+    "file": "maps/IMN.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "GBR",
+    "name": "United Kingdom",
+    "continent": "Europe",
+    "aspect": 0.538,
+    "ring_count": 15,
+    "centroid": [
+      -2.12,
+      54.4
+    ],
+    "file": "maps/GBR.json",
+    "best_error": 0.0028
+  },
+  {
+    "id": "ARE",
+    "name": "United Arab Emirates",
+    "continent": "Asia",
+    "aspect": 1.283,
+    "ring_count": 5,
+    "centroid": [
+      54.55,
+      23.47
+    ],
+    "file": "maps/ARE.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "UKR",
+    "name": "Ukraine",
+    "continent": "Europe",
+    "aspect": 1.634,
+    "ring_count": 2,
+    "centroid": [
+      32.14,
+      49.72
+    ],
+    "file": "maps/UKR.json",
+    "best_error": 0.0022
+  },
+  {
+    "id": "UGA",
+    "name": "Uganda",
+    "continent": "Africa",
+    "aspect": 0.951,
+    "ring_count": 1,
+    "centroid": [
+      32.95,
+      1.97
+    ],
+    "file": "maps/UGA.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "TKM",
+    "name": "Turkmenistan",
+    "continent": "Asia",
+    "aspect": 1.426,
+    "ring_count": 2,
+    "centroid": [
+      58.68,
+      39.86
+    ],
+    "file": "maps/TKM.json",
+    "best_error": 0.0012
+  },
+  {
+    "id": "TUR",
+    "name": "Turkey",
+    "continent": "Asia",
+    "aspect": 2.365,
+    "ring_count": 3,
+    "centroid": [
+      34.51,
+      39.35
+    ],
+    "file": "maps/TUR.json",
+    "best_error": 0.0017
+  },
+  {
+    "id": "TUN",
+    "name": "Tunisia",
+    "continent": "Africa",
+    "aspect": 0.473,
+    "ring_count": 3,
+    "centroid": [
+      9.01,
+      33.69
+    ],
+    "file": "maps/TUN.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "TTO",
+    "name": "Trinidad and Tobago",
+    "continent": "North America",
+    "aspect": 1.075,
+    "ring_count": 2,
+    "centroid": [
+      -60.92,
+      11.0
+    ],
+    "file": "maps/TTO.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "TON",
+    "name": "Tonga",
+    "continent": "Oceania",
+    "aspect": 0.465,
+    "ring_count": 3,
+    "centroid": [
+      -175.16,
+      -21.21
+    ],
+    "file": "maps/TON.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "TGO",
+    "name": "Togo",
+    "continent": "Africa",
+    "aspect": 0.367,
+    "ring_count": 1,
+    "centroid": [
+      1.06,
+      8.81
+    ],
+    "file": "maps/TGO.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "TLS",
+    "name": "Timor-Leste",
+    "continent": "Asia",
+    "aspect": 2.348,
+    "ring_count": 3,
+    "centroid": [
+      125.85,
+      -8.8
+    ],
+    "file": "maps/TLS.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "THA",
+    "name": "Thailand",
+    "continent": "Asia",
+    "aspect": 0.539,
+    "ring_count": 5,
+    "centroid": [
+      101.07,
+      15.46
+    ],
+    "file": "maps/THA.json",
+    "best_error": 0.0018
+  },
+  {
+    "id": "TZA",
+    "name": "Tanzania",
+    "continent": "Africa",
+    "aspect": 1.033,
+    "ring_count": 4,
+    "centroid": [
+      34.96,
+      -6.05
+    ],
+    "file": "maps/TZA.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "TJK",
+    "name": "Tajikistan",
+    "continent": "Asia",
+    "aspect": 1.403,
+    "ring_count": 3,
+    "centroid": [
+      72.59,
+      38.2
+    ],
+    "file": "maps/TJK.json",
+    "best_error": 0.0016
+  },
+  {
+    "id": "TWN",
+    "name": "Taiwan",
+    "continent": "Asia",
+    "aspect": 0.995,
+    "ring_count": 2,
+    "centroid": [
+      120.87,
+      23.65
+    ],
+    "file": "maps/TWN.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "SYR",
+    "name": "Syria",
+    "continent": "Asia",
+    "aspect": 1.085,
+    "ring_count": 1,
+    "centroid": [
+      38.28,
+      35.01
+    ],
+    "file": "maps/SYR.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "CHE",
+    "name": "Switzerland",
+    "continent": "Europe",
+    "aspect": 1.58,
+    "ring_count": 1,
+    "centroid": [
+      7.46,
+      46.72
+    ],
+    "file": "maps/CHE.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "SWE",
+    "name": "Sweden",
+    "continent": "Europe",
+    "aspect": 0.389,
+    "ring_count": 3,
+    "centroid": [
+      19.02,
+      65.86
+    ],
+    "file": "maps/SWE.json",
+    "best_error": 0.0016
+  },
+  {
+    "id": "SWZ",
+    "name": "Kingdom of eSwatini",
+    "continent": "Africa",
+    "aspect": 0.757,
+    "ring_count": 1,
+    "centroid": [
+      31.47,
+      -26.53
+    ],
+    "file": "maps/SWZ.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "SUR",
+    "name": "Suriname",
+    "continent": "South America",
+    "aspect": 0.976,
+    "ring_count": 1,
+    "centroid": [
+      -55.91,
+      4.14
+    ],
+    "file": "maps/SUR.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "SSD",
+    "name": "South Sudan",
+    "continent": "Africa",
+    "aspect": 1.263,
+    "ring_count": 1,
+    "centroid": [
+      30.39,
+      7.23
+    ],
+    "file": "maps/SSD.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "SDN",
+    "name": "Sudan",
+    "continent": "Africa",
+    "aspect": 1.19,
+    "ring_count": 1,
+    "centroid": [
+      29.26,
+      16.33
+    ],
+    "file": "maps/SDN.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "LKA",
+    "name": "Sri Lanka",
+    "continent": "Asia",
+    "aspect": 0.557,
+    "ring_count": 3,
+    "centroid": [
+      80.7,
+      7.58
+    ],
+    "file": "maps/LKA.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "ESP",
+    "name": "Spain",
+    "continent": "Europe",
+    "aspect": 1.067,
+    "ring_count": 11,
+    "centroid": [
+      -3.46,
+      40.09
+    ],
+    "file": "maps/ESP.json",
+    "best_error": 0.0014
+  },
+  {
+    "id": "KOR",
+    "name": "Republic of Korea",
+    "continent": "Asia",
+    "aspect": 0.732,
+    "ring_count": 11,
+    "centroid": [
+      128.13,
+      36.38
+    ],
+    "file": "maps/KOR.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "ZAF",
+    "name": "South Africa",
+    "continent": "Africa",
+    "aspect": 0.75,
+    "ring_count": 2,
+    "centroid": [
+      23.67,
+      -29.71
+    ],
+    "file": "maps/ZAF.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "SOM",
+    "name": "Somalia",
+    "continent": "Africa",
+    "aspect": 0.761,
+    "ring_count": 1,
+    "centroid": [
+      45.19,
+      3.57
+    ],
+    "file": "maps/SOM.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "SOL",
+    "name": "Somaliland",
+    "continent": "Africa",
+    "aspect": 1.769,
+    "ring_count": 1,
+    "centroid": [
+      46.73,
+      9.44
+    ],
+    "file": "maps/SOL.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "SLB",
+    "name": "Solomon Islands",
+    "continent": "Oceania",
+    "aspect": 1.841,
+    "ring_count": 15,
+    "centroid": [
+      159.17,
+      -8.03
+    ],
+    "file": "maps/SLB.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "SVK",
+    "name": "Slovakia",
+    "continent": "Europe",
+    "aspect": 2.041,
+    "ring_count": 1,
+    "centroid": [
+      19.05,
+      48.73
+    ],
+    "file": "maps/SVK.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "SVN",
+    "name": "Slovenia",
+    "continent": "Europe",
+    "aspect": 1.517,
+    "ring_count": 1,
+    "centroid": [
+      14.92,
+      46.06
+    ],
+    "file": "maps/SVN.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "SGP",
+    "name": "Singapore",
+    "continent": "Asia",
+    "aspect": 1.905,
+    "ring_count": 1,
+    "centroid": [
+      103.82,
+      1.37
+    ],
+    "file": "maps/SGP.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "SLE",
+    "name": "Sierra Leone",
+    "continent": "Africa",
+    "aspect": 0.963,
+    "ring_count": 2,
+    "centroid": [
+      -11.76,
+      8.62
+    ],
+    "file": "maps/SLE.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "SYC",
+    "name": "Seychelles",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 0.701,
+    "ring_count": 1,
+    "centroid": [
+      55.48,
+      -4.68
+    ],
+    "file": "maps/SYC.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "SRB",
+    "name": "Serbia",
+    "continent": "Europe",
+    "aspect": 0.756,
+    "ring_count": 1,
+    "centroid": [
+      20.79,
+      44.19
+    ],
+    "file": "maps/SRB.json",
+    "best_error": 0.0012
+  },
+  {
+    "id": "SEN",
+    "name": "Senegal",
+    "continent": "Africa",
+    "aspect": 1.365,
+    "ring_count": 1,
+    "centroid": [
+      -14.78,
+      15.14
+    ],
+    "file": "maps/SEN.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "SAU",
+    "name": "Saudi Arabia",
+    "continent": "Asia",
+    "aspect": 1.221,
+    "ring_count": 2,
+    "centroid": [
+      44.7,
+      23.81
+    ],
+    "file": "maps/SAU.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "STP",
+    "name": "S\u00e3o Tom\u00e9 and Principe",
+    "continent": "Africa",
+    "aspect": 0.596,
+    "ring_count": 2,
+    "centroid": [
+      7.02,
+      0.97
+    ],
+    "file": "maps/STP.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "SMR",
+    "name": "San Marino",
+    "continent": "Europe",
+    "aspect": 0.887,
+    "ring_count": 1,
+    "centroid": [
+      12.44,
+      43.93
+    ],
+    "file": "maps/SMR.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "WSM",
+    "name": "Samoa",
+    "continent": "Oceania",
+    "aspect": 2.219,
+    "ring_count": 2,
+    "centroid": [
+      -172.44,
+      -13.64
+    ],
+    "file": "maps/WSM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "VCT",
+    "name": "Saint Vincent and the Grenadines",
+    "continent": "North America",
+    "aspect": 0.337,
+    "ring_count": 3,
+    "centroid": [
+      -61.34,
+      13.09
+    ],
+    "file": "maps/VCT.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "LCA",
+    "name": "Saint Lucia",
+    "continent": "North America",
+    "aspect": 0.481,
+    "ring_count": 1,
+    "centroid": [
+      -60.98,
+      13.89
+    ],
+    "file": "maps/LCA.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "KNA",
+    "name": "Saint Kitts and Nevis",
+    "continent": "North America",
+    "aspect": 0.971,
+    "ring_count": 2,
+    "centroid": [
+      -62.76,
+      17.34
+    ],
+    "file": "maps/KNA.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "RWA",
+    "name": "Rwanda",
+    "continent": "Africa",
+    "aspect": 1.156,
+    "ring_count": 1,
+    "centroid": [
+      30.1,
+      -1.9
+    ],
+    "file": "maps/RWA.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "RUS",
+    "name": "Russian Federation",
+    "continent": "Europe",
+    "aspect": 4.726,
+    "ring_count": 15,
+    "centroid": [
+      44.69,
+      58.25
+    ],
+    "file": "maps/RUS.json",
+    "best_error": 0.0131
+  },
+  {
+    "id": "ROU",
+    "name": "Romania",
+    "continent": "Europe",
+    "aspect": 1.438,
+    "ring_count": 1,
+    "centroid": [
+      24.97,
+      45.73
+    ],
+    "file": "maps/ROU.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "QAT",
+    "name": "Qatar",
+    "continent": "Asia",
+    "aspect": 0.486,
+    "ring_count": 1,
+    "centroid": [
+      51.14,
+      25.24
+    ],
+    "file": "maps/QAT.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "PRT",
+    "name": "Portugal",
+    "continent": "Europe",
+    "aspect": 2.036,
+    "ring_count": 9,
+    "centroid": [
+      -8.27,
+      39.61
+    ],
+    "file": "maps/PRT.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "POL",
+    "name": "Poland",
+    "continent": "Europe",
+    "aspect": 1.056,
+    "ring_count": 1,
+    "centroid": [
+      19.49,
+      51.99
+    ],
+    "file": "maps/POL.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "PHL",
+    "name": "Philippines",
+    "continent": "Asia",
+    "aspect": 0.707,
+    "ring_count": 15,
+    "centroid": [
+      122.47,
+      11.2
+    ],
+    "file": "maps/PHL.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "PER",
+    "name": "Peru",
+    "continent": "South America",
+    "aspect": 0.674,
+    "ring_count": 1,
+    "centroid": [
+      -72.9,
+      -12.98
+    ],
+    "file": "maps/PER.json",
+    "best_error": 0.0015
+  },
+  {
+    "id": "PRY",
+    "name": "Paraguay",
+    "continent": "South America",
+    "aspect": 0.945,
+    "ring_count": 1,
+    "centroid": [
+      -60.15,
+      -21.67
+    ],
+    "file": "maps/PRY.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "PNG",
+    "name": "Papua New Guinea",
+    "continent": "Oceania",
+    "aspect": 1.462,
+    "ring_count": 15,
+    "centroid": [
+      143.91,
+      -5.7
+    ],
+    "file": "maps/PNG.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "PAN",
+    "name": "Panama",
+    "continent": "North America",
+    "aspect": 2.424,
+    "ring_count": 5,
+    "centroid": [
+      -80.35,
+      8.72
+    ],
+    "file": "maps/PAN.json",
+    "best_error": 0.0012
+  },
+  {
+    "id": "PLW",
+    "name": "Palau",
+    "continent": "Oceania",
+    "aspect": 0.745,
+    "ring_count": 2,
+    "centroid": [
+      134.58,
+      7.52
+    ],
+    "file": "maps/PLW.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "PAK",
+    "name": "Pakistan",
+    "continent": "Asia",
+    "aspect": 1.064,
+    "ring_count": 1,
+    "centroid": [
+      68.55,
+      29.33
+    ],
+    "file": "maps/PAK.json",
+    "best_error": 0.0016
+  },
+  {
+    "id": "OMN",
+    "name": "Oman",
+    "continent": "Asia",
+    "aspect": 0.75,
+    "ring_count": 4,
+    "centroid": [
+      57.34,
+      22.12
+    ],
+    "file": "maps/OMN.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "NOR",
+    "name": "Norway",
+    "continent": "Europe",
+    "aspect": 0.912,
+    "ring_count": 15,
+    "centroid": [
+      9.68,
+      61.36
+    ],
+    "file": "maps/NOR.json",
+    "best_error": 0.0049
+  },
+  {
+    "id": "PRK",
+    "name": "Dem. Rep. Korea",
+    "continent": "Asia",
+    "aspect": 0.921,
+    "ring_count": 2,
+    "centroid": [
+      126.44,
+      39.89
+    ],
+    "file": "maps/PRK.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "NGA",
+    "name": "Nigeria",
+    "continent": "Africa",
+    "aspect": 1.228,
+    "ring_count": 1,
+    "centroid": [
+      7.5,
+      9.44
+    ],
+    "file": "maps/NGA.json",
+    "best_error": 0.0012
+  },
+  {
+    "id": "NER",
+    "name": "Niger",
+    "continent": "Africa",
+    "aspect": 1.275,
+    "ring_count": 1,
+    "centroid": [
+      9.5,
+      17.45
+    ],
+    "file": "maps/NER.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "NIC",
+    "name": "Nicaragua",
+    "continent": "North America",
+    "aspect": 1.03,
+    "ring_count": 1,
+    "centroid": [
+      -85.07,
+      12.67
+    ],
+    "file": "maps/NIC.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "NZL",
+    "name": "New Zealand",
+    "continent": "Oceania",
+    "aspect": 15.06,
+    "ring_count": 11,
+    "centroid": [
+      172.79,
+      -39.76
+    ],
+    "file": "maps/NZL.json",
+    "best_error": 0.0018
+  },
+  {
+    "id": "NIU",
+    "name": "Niue",
+    "continent": "Oceania",
+    "aspect": 0.852,
+    "ring_count": 1,
+    "centroid": [
+      -169.86,
+      -19.05
+    ],
+    "file": "maps/NIU.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "COK",
+    "name": "Cook Islands",
+    "continent": "Oceania",
+    "aspect": 1.561,
+    "ring_count": 1,
+    "centroid": [
+      -159.79,
+      -21.22
+    ],
+    "file": "maps/COK.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "NLD",
+    "name": "Netherlands",
+    "continent": "Europe",
+    "aspect": 1.108,
+    "ring_count": 11,
+    "centroid": [
+      5.61,
+      52.42
+    ],
+    "file": "maps/NLD.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "ABW",
+    "name": "Aruba",
+    "continent": "North America",
+    "aspect": 0.87,
+    "ring_count": 1,
+    "centroid": [
+      -69.97,
+      12.52
+    ],
+    "file": "maps/ABW.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "CUW",
+    "name": "Cura\u00e7ao",
+    "continent": "North America",
+    "aspect": 1.191,
+    "ring_count": 1,
+    "centroid": [
+      -68.92,
+      12.15
+    ],
+    "file": "maps/CUW.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "NPL",
+    "name": "Nepal",
+    "continent": "Asia",
+    "aspect": 1.773,
+    "ring_count": 1,
+    "centroid": [
+      83.64,
+      28.3
+    ],
+    "file": "maps/NPL.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "NRU",
+    "name": "Nauru",
+    "continent": "Oceania",
+    "aspect": 0.836,
+    "ring_count": 1,
+    "centroid": [
+      166.93,
+      -0.52
+    ],
+    "file": "maps/NRU.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "NAM",
+    "name": "Namibia",
+    "continent": "Africa",
+    "aspect": 1.059,
+    "ring_count": 1,
+    "centroid": [
+      17.11,
+      -20.58
+    ],
+    "file": "maps/NAM.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "MOZ",
+    "name": "Mozambique",
+    "continent": "Africa",
+    "aspect": 0.629,
+    "ring_count": 1,
+    "centroid": [
+      37.84,
+      -13.94
+    ],
+    "file": "maps/MOZ.json",
+    "best_error": 0.0014
+  },
+  {
+    "id": "MAR",
+    "name": "Morocco",
+    "continent": "Africa",
+    "aspect": 0.935,
+    "ring_count": 1,
+    "centroid": [
+      -7.19,
+      31.65
+    ],
+    "file": "maps/MAR.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "ESH",
+    "name": "Western Sahara",
+    "continent": "Africa",
+    "aspect": 1.123,
+    "ring_count": 1,
+    "centroid": [
+      -12.63,
+      23.97
+    ],
+    "file": "maps/ESH.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "MNE",
+    "name": "Montenegro",
+    "continent": "Europe",
+    "aspect": 0.838,
+    "ring_count": 1,
+    "centroid": [
+      19.14,
+      42.8
+    ],
+    "file": "maps/MNE.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "MNG",
+    "name": "Mongolia",
+    "continent": "Asia",
+    "aspect": 2.123,
+    "ring_count": 1,
+    "centroid": [
+      104.15,
+      46.0
+    ],
+    "file": "maps/MNG.json",
+    "best_error": 0.0013
+  },
+  {
+    "id": "MDA",
+    "name": "Moldova",
+    "continent": "Europe",
+    "aspect": 0.785,
+    "ring_count": 1,
+    "centroid": [
+      28.49,
+      47.43
+    ],
+    "file": "maps/MDA.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "MCO",
+    "name": "Monaco",
+    "continent": "Europe",
+    "aspect": 1.124,
+    "ring_count": 1,
+    "centroid": [
+      7.4,
+      43.74
+    ],
+    "file": "maps/MCO.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MEX",
+    "name": "Mexico",
+    "continent": "North America",
+    "aspect": 1.528,
+    "ring_count": 6,
+    "centroid": [
+      -102.29,
+      23.92
+    ],
+    "file": "maps/MEX.json",
+    "best_error": 0.0027
+  },
+  {
+    "id": "MUS",
+    "name": "Mauritius",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 0.85,
+    "ring_count": 1,
+    "centroid": [
+      57.57,
+      -20.3
+    ],
+    "file": "maps/MUS.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MRT",
+    "name": "Mauritania",
+    "continent": "Africa",
+    "aspect": 0.92,
+    "ring_count": 1,
+    "centroid": [
+      -9.74,
+      19.59
+    ],
+    "file": "maps/MRT.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "MLT",
+    "name": "Malta",
+    "continent": "Europe",
+    "aspect": 1.223,
+    "ring_count": 2,
+    "centroid": [
+      14.43,
+      35.89
+    ],
+    "file": "maps/MLT.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MLI",
+    "name": "Mali",
+    "continent": "Africa",
+    "aspect": 1.053,
+    "ring_count": 1,
+    "centroid": [
+      -2.04,
+      18.69
+    ],
+    "file": "maps/MLI.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "MDV",
+    "name": "Maldives",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 0.143,
+    "ring_count": 2,
+    "centroid": [
+      73.51,
+      4.17
+    ],
+    "file": "maps/MDV.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MYS",
+    "name": "Malaysia",
+    "continent": "Asia",
+    "aspect": 3.02,
+    "ring_count": 8,
+    "centroid": [
+      113.84,
+      2.53
+    ],
+    "file": "maps/MYS.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "MWI",
+    "name": "Malawi",
+    "continent": "Africa",
+    "aspect": 0.405,
+    "ring_count": 3,
+    "centroid": [
+      33.61,
+      -13.39
+    ],
+    "file": "maps/MWI.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "MDG",
+    "name": "Madagascar",
+    "continent": "Africa",
+    "aspect": 0.508,
+    "ring_count": 3,
+    "centroid": [
+      46.7,
+      -18.63
+    ],
+    "file": "maps/MDG.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "MKD",
+    "name": "North Macedonia",
+    "continent": "Europe",
+    "aspect": 1.269,
+    "ring_count": 1,
+    "centroid": [
+      21.56,
+      41.56
+    ],
+    "file": "maps/MKD.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "LUX",
+    "name": "Luxembourg",
+    "continent": "Europe",
+    "aspect": 0.688,
+    "ring_count": 1,
+    "centroid": [
+      6.08,
+      49.73
+    ],
+    "file": "maps/LUX.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "LTU",
+    "name": "Lithuania",
+    "continent": "Europe",
+    "aspect": 1.335,
+    "ring_count": 2,
+    "centroid": [
+      24.09,
+      55.1
+    ],
+    "file": "maps/LTU.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "LIE",
+    "name": "Liechtenstein",
+    "continent": "Europe",
+    "aspect": 0.418,
+    "ring_count": 1,
+    "centroid": [
+      9.56,
+      47.11
+    ],
+    "file": "maps/LIE.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "LBY",
+    "name": "Libya",
+    "continent": "Africa",
+    "aspect": 1.035,
+    "ring_count": 1,
+    "centroid": [
+      18.01,
+      26.64
+    ],
+    "file": "maps/LBY.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "LBR",
+    "name": "Liberia",
+    "continent": "Africa",
+    "aspect": 0.975,
+    "ring_count": 1,
+    "centroid": [
+      -9.46,
+      6.45
+    ],
+    "file": "maps/LBR.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "LSO",
+    "name": "Lesotho",
+    "continent": "Africa",
+    "aspect": 0.988,
+    "ring_count": 1,
+    "centroid": [
+      28.25,
+      -29.48
+    ],
+    "file": "maps/LSO.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "LBN",
+    "name": "Lebanon",
+    "continent": "Asia",
+    "aspect": 0.762,
+    "ring_count": 1,
+    "centroid": [
+      35.99,
+      34.13
+    ],
+    "file": "maps/LBN.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "LVA",
+    "name": "Latvia",
+    "continent": "Europe",
+    "aspect": 1.631,
+    "ring_count": 1,
+    "centroid": [
+      25.46,
+      57.07
+    ],
+    "file": "maps/LVA.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "LAO",
+    "name": "Lao PDR",
+    "continent": "Asia",
+    "aspect": 0.829,
+    "ring_count": 1,
+    "centroid": [
+      102.53,
+      19.43
+    ],
+    "file": "maps/LAO.json",
+    "best_error": 0.0013
+  },
+  {
+    "id": "KGZ",
+    "name": "Kyrgyzstan",
+    "continent": "Asia",
+    "aspect": 2.041,
+    "ring_count": 1,
+    "centroid": [
+      74.53,
+      41.67
+    ],
+    "file": "maps/KGZ.json",
+    "best_error": 0.0013
+  },
+  {
+    "id": "KWT",
+    "name": "Kuwait",
+    "continent": "Asia",
+    "aspect": 1.064,
+    "ring_count": 2,
+    "centroid": [
+      47.31,
+      29.41
+    ],
+    "file": "maps/KWT.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "KOS",
+    "name": "Kosovo",
+    "continent": "Europe",
+    "aspect": 0.902,
+    "ring_count": 1,
+    "centroid": [
+      20.86,
+      42.59
+    ],
+    "file": "maps/KOS.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "KIR",
+    "name": "Kiribati",
+    "continent": "Oceania",
+    "aspect": 22.518,
+    "ring_count": 15,
+    "centroid": [
+      -157.38,
+      1.82
+    ],
+    "file": "maps/KIR.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "KEN",
+    "name": "Kenya",
+    "continent": "Africa",
+    "aspect": 0.784,
+    "ring_count": 2,
+    "centroid": [
+      37.91,
+      0.55
+    ],
+    "file": "maps/KEN.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "KAZ",
+    "name": "Kazakhstan",
+    "continent": "Asia",
+    "aspect": 1.805,
+    "ring_count": 1,
+    "centroid": [
+      68.69,
+      49.05
+    ],
+    "file": "maps/KAZ.json",
+    "best_error": 0.0023
+  },
+  {
+    "id": "JOR",
+    "name": "Jordan",
+    "continent": "Asia",
+    "aspect": 0.892,
+    "ring_count": 1,
+    "centroid": [
+      36.38,
+      30.81
+    ],
+    "file": "maps/JOR.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "JPN",
+    "name": "Japan",
+    "continent": "Asia",
+    "aspect": 0.842,
+    "ring_count": 15,
+    "centroid": [
+      138.44,
+      36.14
+    ],
+    "file": "maps/JPN.json",
+    "best_error": 0.0014
+  },
+  {
+    "id": "JAM",
+    "name": "Jamaica",
+    "continent": "North America",
+    "aspect": 2.506,
+    "ring_count": 1,
+    "centroid": [
+      -77.32,
+      18.14
+    ],
+    "file": "maps/JAM.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "ITA",
+    "name": "Italy",
+    "continent": "Europe",
+    "aspect": 0.81,
+    "ring_count": 7,
+    "centroid": [
+      11.08,
+      44.73
+    ],
+    "file": "maps/ITA.json",
+    "best_error": 0.0015
+  },
+  {
+    "id": "ISR",
+    "name": "Israel",
+    "continent": "Asia",
+    "aspect": 0.358,
+    "ring_count": 1,
+    "centroid": [
+      34.85,
+      30.91
+    ],
+    "file": "maps/ISR.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "PSE",
+    "name": "Palestine",
+    "continent": "Asia",
+    "aspect": 0.878,
+    "ring_count": 2,
+    "centroid": [
+      35.29,
+      32.05
+    ],
+    "file": "maps/PSE.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "IRL",
+    "name": "Ireland",
+    "continent": "Europe",
+    "aspect": 0.673,
+    "ring_count": 2,
+    "centroid": [
+      -7.8,
+      53.08
+    ],
+    "file": "maps/IRL.json",
+    "best_error": 0.0024
+  },
+  {
+    "id": "IRQ",
+    "name": "Iraq",
+    "continent": "Asia",
+    "aspect": 0.985,
+    "ring_count": 1,
+    "centroid": [
+      43.26,
+      33.09
+    ],
+    "file": "maps/IRQ.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "IRN",
+    "name": "Iran",
+    "continent": "Asia",
+    "aspect": 1.113,
+    "ring_count": 2,
+    "centroid": [
+      54.93,
+      32.17
+    ],
+    "file": "maps/IRN.json",
+    "best_error": 0.0016
+  },
+  {
+    "id": "IDN",
+    "name": "Indonesia",
+    "continent": "Asia",
+    "aspect": 2.864,
+    "ring_count": 15,
+    "centroid": [
+      101.89,
+      -0.95
+    ],
+    "file": "maps/IDN.json",
+    "best_error": 0.0016
+  },
+  {
+    "id": "IND",
+    "name": "India",
+    "continent": "Asia",
+    "aspect": 0.936,
+    "ring_count": 4,
+    "centroid": [
+      79.36,
+      22.69
+    ],
+    "file": "maps/IND.json",
+    "best_error": 0.0034
+  },
+  {
+    "id": "ISL",
+    "name": "Iceland",
+    "continent": "Europe",
+    "aspect": 1.492,
+    "ring_count": 1,
+    "centroid": [
+      -18.67,
+      64.78
+    ],
+    "file": "maps/ISL.json",
+    "best_error": 0.0028
+  },
+  {
+    "id": "HUN",
+    "name": "Hungary",
+    "continent": "Europe",
+    "aspect": 1.649,
+    "ring_count": 1,
+    "centroid": [
+      19.45,
+      47.09
+    ],
+    "file": "maps/HUN.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "HND",
+    "name": "Honduras",
+    "continent": "North America",
+    "aspect": 1.697,
+    "ring_count": 3,
+    "centroid": [
+      -86.89,
+      14.79
+    ],
+    "file": "maps/HND.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "HTI",
+    "name": "Haiti",
+    "continent": "North America",
+    "aspect": 1.302,
+    "ring_count": 3,
+    "centroid": [
+      -72.22,
+      19.26
+    ],
+    "file": "maps/HTI.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "GUY",
+    "name": "Guyana",
+    "continent": "South America",
+    "aspect": 0.665,
+    "ring_count": 1,
+    "centroid": [
+      -58.94,
+      5.12
+    ],
+    "file": "maps/GUY.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "GNB",
+    "name": "Guinea-Bissau",
+    "continent": "Africa",
+    "aspect": 1.707,
+    "ring_count": 7,
+    "centroid": [
+      -14.52,
+      12.16
+    ],
+    "file": "maps/GNB.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "GIN",
+    "name": "Guinea",
+    "continent": "Africa",
+    "aspect": 1.327,
+    "ring_count": 1,
+    "centroid": [
+      -10.02,
+      10.62
+    ],
+    "file": "maps/GIN.json",
+    "best_error": 0.0014
+  },
+  {
+    "id": "GTM",
+    "name": "Guatemala",
+    "continent": "North America",
+    "aspect": 0.949,
+    "ring_count": 1,
+    "centroid": [
+      -90.5,
+      14.98
+    ],
+    "file": "maps/GTM.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "GRD",
+    "name": "Grenada",
+    "continent": "North America",
+    "aspect": 0.749,
+    "ring_count": 1,
+    "centroid": [
+      -61.68,
+      12.11
+    ],
+    "file": "maps/GRD.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "GRC",
+    "name": "Greece",
+    "continent": "Europe",
+    "aspect": 0.973,
+    "ring_count": 15,
+    "centroid": [
+      21.73,
+      39.49
+    ],
+    "file": "maps/GRC.json",
+    "best_error": 0.0024
+  },
+  {
+    "id": "GHA",
+    "name": "Ghana",
+    "continent": "Africa",
+    "aspect": 0.686,
+    "ring_count": 1,
+    "centroid": [
+      -1.04,
+      7.72
+    ],
+    "file": "maps/GHA.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "DEU",
+    "name": "Germany",
+    "continent": "Europe",
+    "aspect": 0.741,
+    "ring_count": 6,
+    "centroid": [
+      9.68,
+      50.96
+    ],
+    "file": "maps/DEU.json",
+    "best_error": 0.0021
+  },
+  {
+    "id": "GEO",
+    "name": "Georgia",
+    "continent": "Asia",
+    "aspect": 1.994,
+    "ring_count": 1,
+    "centroid": [
+      43.74,
+      41.87
+    ],
+    "file": "maps/GEO.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "GMB",
+    "name": "The Gambia",
+    "continent": "Africa",
+    "aspect": 3.895,
+    "ring_count": 1,
+    "centroid": [
+      -15.0,
+      13.64
+    ],
+    "file": "maps/GMB.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "GAB",
+    "name": "Gabon",
+    "continent": "Africa",
+    "aspect": 0.929,
+    "ring_count": 1,
+    "centroid": [
+      11.84,
+      -0.44
+    ],
+    "file": "maps/GAB.json",
+    "best_error": 0.0013
+  },
+  {
+    "id": "FRA",
+    "name": "France",
+    "continent": "Europe",
+    "aspect": 1.113,
+    "ring_count": 9,
+    "centroid": [
+      2.55,
+      46.7
+    ],
+    "file": "maps/FRA.json",
+    "best_error": 0.0022
+  },
+  {
+    "id": "SPM",
+    "name": "Saint Pierre and Miquelon",
+    "continent": "North America",
+    "aspect": 0.491,
+    "ring_count": 2,
+    "centroid": [
+      -56.33,
+      47.04
+    ],
+    "file": "maps/SPM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "WLF",
+    "name": "Wallis and Futuna Islands",
+    "continent": "Oceania",
+    "aspect": 1.815,
+    "ring_count": 2,
+    "centroid": [
+      -178.14,
+      -14.29
+    ],
+    "file": "maps/WLF.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "MAF",
+    "name": "Saint-Martin",
+    "continent": "North America",
+    "aspect": 2.328,
+    "ring_count": 1,
+    "centroid": [
+      -63.05,
+      18.08
+    ],
+    "file": "maps/MAF.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "BLM",
+    "name": "Saint-Barth\u00e9lemy",
+    "continent": "North America",
+    "aspect": 1.531,
+    "ring_count": 1,
+    "centroid": [
+      -62.83,
+      17.9
+    ],
+    "file": "maps/BLM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "PYF",
+    "name": "French Polynesia",
+    "continent": "Oceania",
+    "aspect": 1.482,
+    "ring_count": 15,
+    "centroid": [
+      -149.46,
+      -17.63
+    ],
+    "file": "maps/PYF.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "NCL",
+    "name": "New Caledonia",
+    "continent": "Oceania",
+    "aspect": 2.16,
+    "ring_count": 6,
+    "centroid": [
+      165.08,
+      -21.06
+    ],
+    "file": "maps/NCL.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "ATF",
+    "name": "French Southern and Antarctic Lands",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 3.642,
+    "ring_count": 3,
+    "centroid": [
+      69.12,
+      -49.3
+    ],
+    "file": "maps/ATF.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "ALA",
+    "name": "\u00c5land Islands",
+    "continent": "Europe",
+    "aspect": 1.379,
+    "ring_count": 3,
+    "centroid": [
+      19.87,
+      60.16
+    ],
+    "file": "maps/ALA.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "FIN",
+    "name": "Finland",
+    "continent": "Europe",
+    "aspect": 0.479,
+    "ring_count": 5,
+    "centroid": [
+      27.28,
+      63.25
+    ],
+    "file": "maps/FIN.json",
+    "best_error": 0.0015
+  },
+  {
+    "id": "FJI",
+    "name": "Fiji",
+    "continent": "Oceania",
+    "aspect": 51.346,
+    "ring_count": 15,
+    "centroid": [
+      177.98,
+      -17.83
+    ],
+    "file": "maps/FJI.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "ETH",
+    "name": "Ethiopia",
+    "continent": "Africa",
+    "aspect": 1.302,
+    "ring_count": 1,
+    "centroid": [
+      39.09,
+      8.03
+    ],
+    "file": "maps/ETH.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "EST",
+    "name": "Estonia",
+    "continent": "Europe",
+    "aspect": 1.547,
+    "ring_count": 4,
+    "centroid": [
+      25.87,
+      58.72
+    ],
+    "file": "maps/EST.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "ERI",
+    "name": "Eritrea",
+    "continent": "Africa",
+    "aspect": 1.144,
+    "ring_count": 3,
+    "centroid": [
+      38.29,
+      15.79
+    ],
+    "file": "maps/ERI.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "GNQ",
+    "name": "Equatorial Guinea",
+    "continent": "Africa",
+    "aspect": 1.036,
+    "ring_count": 2,
+    "centroid": [
+      8.99,
+      2.33
+    ],
+    "file": "maps/GNQ.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "SLV",
+    "name": "El Salvador",
+    "continent": "North America",
+    "aspect": 1.833,
+    "ring_count": 1,
+    "centroid": [
+      -88.89,
+      13.69
+    ],
+    "file": "maps/SLV.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "EGY",
+    "name": "Egypt",
+    "continent": "Africa",
+    "aspect": 1.13,
+    "ring_count": 1,
+    "centroid": [
+      29.45,
+      26.19
+    ],
+    "file": "maps/EGY.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "ECU",
+    "name": "Ecuador",
+    "continent": "South America",
+    "aspect": 2.544,
+    "ring_count": 9,
+    "centroid": [
+      -78.19,
+      -1.26
+    ],
+    "file": "maps/ECU.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "DOM",
+    "name": "Dominican Republic",
+    "continent": "North America",
+    "aspect": 1.518,
+    "ring_count": 1,
+    "centroid": [
+      -70.65,
+      19.1
+    ],
+    "file": "maps/DOM.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "DMA",
+    "name": "Dominica",
+    "continent": "North America",
+    "aspect": 0.546,
+    "ring_count": 1,
+    "centroid": [
+      -61.34,
+      15.46
+    ],
+    "file": "maps/DMA.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "DJI",
+    "name": "Djibouti",
+    "continent": "Africa",
+    "aspect": 0.91,
+    "ring_count": 1,
+    "centroid": [
+      42.5,
+      11.98
+    ],
+    "file": "maps/DJI.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "GRL",
+    "name": "Greenland",
+    "continent": "North America",
+    "aspect": 0.698,
+    "ring_count": 11,
+    "centroid": [
+      -39.34,
+      74.32
+    ],
+    "file": "maps/GRL.json",
+    "best_error": 0.0068
+  },
+  {
+    "id": "FRO",
+    "name": "Faeroe Islands",
+    "continent": "Europe",
+    "aspect": 0.504,
+    "ring_count": 5,
+    "centroid": [
+      -7.06,
+      62.19
+    ],
+    "file": "maps/FRO.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "DNK",
+    "name": "Denmark",
+    "continent": "Europe",
+    "aspect": 1.263,
+    "ring_count": 12,
+    "centroid": [
+      9.02,
+      55.97
+    ],
+    "file": "maps/DNK.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "CZE",
+    "name": "Czech Republic",
+    "continent": "Europe",
+    "aspect": 1.765,
+    "ring_count": 1,
+    "centroid": [
+      15.38,
+      49.88
+    ],
+    "file": "maps/CZE.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "CYN",
+    "name": "Northern Cyprus",
+    "continent": "Asia",
+    "aspect": 2.276,
+    "ring_count": 1,
+    "centroid": [
+      33.69,
+      35.22
+    ],
+    "file": "maps/CYN.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "CYP",
+    "name": "Cyprus",
+    "continent": "Asia",
+    "aspect": 2.34,
+    "ring_count": 1,
+    "centroid": [
+      33.08,
+      34.91
+    ],
+    "file": "maps/CYP.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "CUB",
+    "name": "Cuba",
+    "continent": "North America",
+    "aspect": 3.003,
+    "ring_count": 7,
+    "centroid": [
+      -77.98,
+      21.33
+    ],
+    "file": "maps/CUB.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "HRV",
+    "name": "Croatia",
+    "continent": "Europe",
+    "aspect": 1.0,
+    "ring_count": 13,
+    "centroid": [
+      16.37,
+      45.81
+    ],
+    "file": "maps/HRV.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "CIV",
+    "name": "C\u00f4te d'Ivoire",
+    "continent": "Africa",
+    "aspect": 0.949,
+    "ring_count": 2,
+    "centroid": [
+      -5.57,
+      7.49
+    ],
+    "file": "maps/CIV.json",
+    "best_error": 0.0013
+  },
+  {
+    "id": "CRI",
+    "name": "Costa Rica",
+    "continent": "North America",
+    "aspect": 1.056,
+    "ring_count": 1,
+    "centroid": [
+      -84.08,
+      10.07
+    ],
+    "file": "maps/CRI.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "COD",
+    "name": "Democratic Republic of the Congo",
+    "continent": "Africa",
+    "aspect": 1.015,
+    "ring_count": 1,
+    "centroid": [
+      23.46,
+      -1.86
+    ],
+    "file": "maps/COD.json",
+    "best_error": 0.0012
+  },
+  {
+    "id": "COG",
+    "name": "Republic of the Congo",
+    "continent": "Africa",
+    "aspect": 0.862,
+    "ring_count": 1,
+    "centroid": [
+      15.9,
+      0.14
+    ],
+    "file": "maps/COG.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "COM",
+    "name": "Comoros",
+    "continent": "Africa",
+    "aspect": 1.273,
+    "ring_count": 3,
+    "centroid": [
+      43.32,
+      -11.73
+    ],
+    "file": "maps/COM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "COL",
+    "name": "Colombia",
+    "continent": "South America",
+    "aspect": 0.728,
+    "ring_count": 1,
+    "centroid": [
+      -73.17,
+      3.37
+    ],
+    "file": "maps/COL.json",
+    "best_error": 0.0019
+  },
+  {
+    "id": "CHN",
+    "name": "China",
+    "continent": "Asia",
+    "aspect": 1.459,
+    "ring_count": 2,
+    "centroid": [
+      106.34,
+      32.5
+    ],
+    "file": "maps/CHN.json",
+    "best_error": 0.0054
+  },
+  {
+    "id": "MAC",
+    "name": "Macao",
+    "continent": "Asia",
+    "aspect": 1.273,
+    "ring_count": 1,
+    "centroid": [
+      113.56,
+      22.13
+    ],
+    "file": "maps/MAC.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "HKG",
+    "name": "Hong Kong",
+    "continent": "Asia",
+    "aspect": 1.241,
+    "ring_count": 3,
+    "centroid": [
+      114.1,
+      22.45
+    ],
+    "file": "maps/HKG.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "CHL",
+    "name": "Chile",
+    "continent": "South America",
+    "aspect": 0.179,
+    "ring_count": 15,
+    "centroid": [
+      -72.32,
+      -38.15
+    ],
+    "file": "maps/CHL.json",
+    "best_error": 0.0032
+  },
+  {
+    "id": "TCD",
+    "name": "Chad",
+    "continent": "Africa",
+    "aspect": 0.637,
+    "ring_count": 1,
+    "centroid": [
+      18.65,
+      15.14
+    ],
+    "file": "maps/TCD.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "CAF",
+    "name": "Central African Republic",
+    "continent": "Africa",
+    "aspect": 1.476,
+    "ring_count": 1,
+    "centroid": [
+      20.91,
+      6.99
+    ],
+    "file": "maps/CAF.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "CPV",
+    "name": "Republic of Cabo Verde",
+    "continent": "Africa",
+    "aspect": 1.081,
+    "ring_count": 8,
+    "centroid": [
+      -23.64,
+      15.07
+    ],
+    "file": "maps/CPV.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "CAN",
+    "name": "Canada",
+    "continent": "North America",
+    "aspect": 1.055,
+    "ring_count": 15,
+    "centroid": [
+      -101.91,
+      60.32
+    ],
+    "file": "maps/CAN.json",
+    "best_error": 0.0105
+  },
+  {
+    "id": "CMR",
+    "name": "Cameroon",
+    "continent": "Africa",
+    "aspect": 0.669,
+    "ring_count": 1,
+    "centroid": [
+      12.47,
+      4.59
+    ],
+    "file": "maps/CMR.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "KHM",
+    "name": "Cambodia",
+    "continent": "Asia",
+    "aspect": 1.201,
+    "ring_count": 3,
+    "centroid": [
+      104.5,
+      12.65
+    ],
+    "file": "maps/KHM.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "MMR",
+    "name": "Myanmar",
+    "continent": "Asia",
+    "aspect": 0.447,
+    "ring_count": 12,
+    "centroid": [
+      95.8,
+      21.57
+    ],
+    "file": "maps/MMR.json",
+    "best_error": 0.0023
+  },
+  {
+    "id": "BDI",
+    "name": "Burundi",
+    "continent": "Africa",
+    "aspect": 0.837,
+    "ring_count": 1,
+    "centroid": [
+      29.92,
+      -3.33
+    ],
+    "file": "maps/BDI.json",
+    "best_error": 0.0004
+  },
+  {
+    "id": "BFA",
+    "name": "Burkina Faso",
+    "continent": "Africa",
+    "aspect": 1.366,
+    "ring_count": 1,
+    "centroid": [
+      -1.36,
+      12.67
+    ],
+    "file": "maps/BFA.json",
+    "best_error": 0.0009
+  },
+  {
+    "id": "BGR",
+    "name": "Bulgaria",
+    "continent": "Europe",
+    "aspect": 1.537,
+    "ring_count": 1,
+    "centroid": [
+      25.16,
+      42.51
+    ],
+    "file": "maps/BGR.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "BRN",
+    "name": "Brunei Darussalam",
+    "continent": "Asia",
+    "aspect": 1.261,
+    "ring_count": 2,
+    "centroid": [
+      114.55,
+      4.45
+    ],
+    "file": "maps/BRN.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "BRA",
+    "name": "Brazil",
+    "continent": "South America",
+    "aspect": 0.983,
+    "ring_count": 4,
+    "centroid": [
+      -49.56,
+      -12.1
+    ],
+    "file": "maps/BRA.json",
+    "best_error": 0.0038
+  },
+  {
+    "id": "BWA",
+    "name": "Botswana",
+    "continent": "Africa",
+    "aspect": 0.959,
+    "ring_count": 1,
+    "centroid": [
+      24.18,
+      -22.1
+    ],
+    "file": "maps/BWA.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "BIH",
+    "name": "Bosnia and Herzegovina",
+    "continent": "Europe",
+    "aspect": 1.017,
+    "ring_count": 1,
+    "centroid": [
+      18.07,
+      44.09
+    ],
+    "file": "maps/BIH.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "BOL",
+    "name": "Bolivia",
+    "continent": "South America",
+    "aspect": 0.883,
+    "ring_count": 1,
+    "centroid": [
+      -64.59,
+      -16.67
+    ],
+    "file": "maps/BOL.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "BTN",
+    "name": "Bhutan",
+    "continent": "Asia",
+    "aspect": 1.843,
+    "ring_count": 1,
+    "centroid": [
+      90.04,
+      27.54
+    ],
+    "file": "maps/BTN.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "BEN",
+    "name": "Benin",
+    "continent": "Africa",
+    "aspect": 0.49,
+    "ring_count": 1,
+    "centroid": [
+      2.35,
+      10.32
+    ],
+    "file": "maps/BEN.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "BLZ",
+    "name": "Belize",
+    "continent": "North America",
+    "aspect": 0.534,
+    "ring_count": 3,
+    "centroid": [
+      -88.71,
+      17.2
+    ],
+    "file": "maps/BLZ.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "BEL",
+    "name": "Belgium",
+    "continent": "Europe",
+    "aspect": 1.226,
+    "ring_count": 1,
+    "centroid": [
+      4.8,
+      50.79
+    ],
+    "file": "maps/BEL.json",
+    "best_error": 0.0008
+  },
+  {
+    "id": "BLR",
+    "name": "Belarus",
+    "continent": "Europe",
+    "aspect": 1.153,
+    "ring_count": 1,
+    "centroid": [
+      28.42,
+      53.82
+    ],
+    "file": "maps/BLR.json",
+    "best_error": 0.0012
+  },
+  {
+    "id": "BRB",
+    "name": "Barbados",
+    "continent": "North America",
+    "aspect": 0.835,
+    "ring_count": 1,
+    "centroid": [
+      -59.57,
+      13.16
+    ],
+    "file": "maps/BRB.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "BGD",
+    "name": "Bangladesh",
+    "continent": "Asia",
+    "aspect": 0.727,
+    "ring_count": 7,
+    "centroid": [
+      89.68,
+      24.21
+    ],
+    "file": "maps/BGD.json",
+    "best_error": 0.0018
+  },
+  {
+    "id": "BHR",
+    "name": "Bahrain",
+    "continent": "Asia",
+    "aspect": 0.337,
+    "ring_count": 1,
+    "centroid": [
+      50.55,
+      26.06
+    ],
+    "file": "maps/BHR.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "BHS",
+    "name": "Bahamas",
+    "continent": "North America",
+    "aspect": 0.931,
+    "ring_count": 15,
+    "centroid": [
+      -77.15,
+      26.4
+    ],
+    "file": "maps/BHS.json",
+    "best_error": 0.0003
+  },
+  {
+    "id": "AZE",
+    "name": "Azerbaijan",
+    "continent": "Asia",
+    "aspect": 1.221,
+    "ring_count": 3,
+    "centroid": [
+      47.21,
+      40.4
+    ],
+    "file": "maps/AZE.json",
+    "best_error": 0.001
+  },
+  {
+    "id": "AUT",
+    "name": "Austria",
+    "continent": "Europe",
+    "aspect": 1.979,
+    "ring_count": 1,
+    "centroid": [
+      14.13,
+      47.52
+    ],
+    "file": "maps/AUT.json",
+    "best_error": 0.0011
+  },
+  {
+    "id": "AUS",
+    "name": "Australia",
+    "continent": "Oceania",
+    "aspect": 1.121,
+    "ring_count": 7,
+    "centroid": [
+      134.05,
+      -24.13
+    ],
+    "file": "maps/AUS.json",
+    "best_error": 0.0033
+  },
+  {
+    "id": "IOA",
+    "name": "Indian Ocean Territories",
+    "continent": "Asia",
+    "aspect": 4.946,
+    "ring_count": 3,
+    "centroid": [
+      105.67,
+      -10.49
+    ],
+    "file": "maps/IOA.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "HMD",
+    "name": "Heard I. and McDonald Islands",
+    "continent": "Seven seas (open ocean)",
+    "aspect": 1.614,
+    "ring_count": 1,
+    "centroid": [
+      73.51,
+      -53.1
+    ],
+    "file": "maps/HMD.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "NFK",
+    "name": "Norfolk Island",
+    "continent": "Oceania",
+    "aspect": 0.895,
+    "ring_count": 1,
+    "centroid": [
+      167.95,
+      -29.03
+    ],
+    "file": "maps/NFK.json",
+    "best_error": 0.0002
+  },
+  {
+    "id": "ATC",
+    "name": "Ashmore and Cartier Islands",
+    "continent": "Oceania",
+    "aspect": 1.85,
+    "ring_count": 1,
+    "centroid": [
+      123.59,
+      -12.43
+    ],
+    "file": "maps/ATC.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "ARM",
+    "name": "Armenia",
+    "continent": "Asia",
+    "aspect": 0.988,
+    "ring_count": 2,
+    "centroid": [
+      44.8,
+      40.46
+    ],
+    "file": "maps/ARM.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "ARG",
+    "name": "Argentina",
+    "continent": "South America",
+    "aspect": 0.5,
+    "ring_count": 3,
+    "centroid": [
+      -64.17,
+      -33.5
+    ],
+    "file": "maps/ARG.json",
+    "best_error": 0.0023
+  },
+  {
+    "id": "ATG",
+    "name": "Antigua and Barbuda",
+    "continent": "North America",
+    "aspect": 0.268,
+    "ring_count": 2,
+    "centroid": [
+      -61.79,
+      17.35
+    ],
+    "file": "maps/ATG.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "AGO",
+    "name": "Angola",
+    "continent": "Africa",
+    "aspect": 0.885,
+    "ring_count": 2,
+    "centroid": [
+      17.98,
+      -12.18
+    ],
+    "file": "maps/AGO.json",
+    "best_error": 0.0007
+  },
+  {
+    "id": "AND",
+    "name": "Andorra",
+    "continent": "Europe",
+    "aspect": 1.151,
+    "ring_count": 1,
+    "centroid": [
+      1.54,
+      42.55
+    ],
+    "file": "maps/AND.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "DZA",
+    "name": "Algeria",
+    "continent": "Africa",
+    "aspect": 1.013,
+    "ring_count": 1,
+    "centroid": [
+      2.81,
+      27.4
+    ],
+    "file": "maps/DZA.json",
+    "best_error": 0.0006
+  },
+  {
+    "id": "ALB",
+    "name": "Albania",
+    "continent": "Europe",
+    "aspect": 0.443,
+    "ring_count": 1,
+    "centroid": [
+      20.11,
+      40.65
+    ],
+    "file": "maps/ALB.json",
+    "best_error": 0.0005
+  },
+  {
+    "id": "AFG",
+    "name": "Afghanistan",
+    "continent": "Asia",
+    "aspect": 1.315,
+    "ring_count": 1,
+    "centroid": [
+      66.5,
+      34.16
+    ],
+    "file": "maps/AFG.json",
+    "best_error": 0.0012
+  },
+  {
+    "id": "KAS",
+    "name": "Siachen Glacier",
+    "continent": "Asia",
+    "aspect": 1.526,
+    "ring_count": 1,
+    "centroid": [
+      77.13,
+      35.34
+    ],
+    "file": "maps/KAS.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "ATA",
+    "name": "Antarctica",
+    "continent": "Antarctica",
+    "aspect": 2.371,
+    "ring_count": 9,
+    "centroid": [
+      35.89,
+      -79.84
+    ],
+    "file": "maps/ATA.json",
+    "best_error": 0.0078
+  },
+  {
+    "id": "SXM",
+    "name": "Sint Maarten",
+    "continent": "North America",
+    "aspect": 2.169,
+    "ring_count": 1,
+    "centroid": [
+      -63.07,
+      18.04
+    ],
+    "file": "maps/SXM.json",
+    "best_error": 0.0001
+  },
+  {
+    "id": "TUV",
+    "name": "Tuvalu",
+    "continent": "Oceania",
+    "aspect": 0.301,
+    "ring_count": 1,
+    "centroid": [
+      179.21,
+      -8.51
+    ],
+    "file": "maps/TUV.json",
+    "best_error": 0.0001
+  }
+]

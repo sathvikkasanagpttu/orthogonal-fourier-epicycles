@@ -1,0 +1,12 @@
+ID,Name,Rings,Error_N50_Pct,N_for_half_pct,N_for_tenth_pct,Best_Error_Pct
+WLD,World (All Land),6,0.203,20,200,0.0246
+NOR,Norway,15,0.199,20,200,0.0049
+RUS,Russia,15,0.185,20,200,0.0131
+IND,India,4,0.147,20,100,0.0034
+CHL,Chile,15,0.13,5,100,0.0032
+USA,United States,15,0.127,10,100,0.0068
+ITA,Italy,7,0.123,20,100,0.0015
+AUS,Australia,7,0.119,10,100,0.0033
+BRA,Brazil,4,0.117,20,100,0.0038
+IDN,Indonesia,15,0.116,20,100,0.0016
+JPN,Japan,15,0.112,20,100,0.0014

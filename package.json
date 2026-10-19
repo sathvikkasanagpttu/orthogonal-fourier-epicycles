@@ -1,0 +1,19 @@
+{
+  "name": "orthogonal-fourier-world-atlas",
+  "version": "1.0.0",
+  "description": "Orthogonal Fourier Epicycles: World Atlas Edition",
+  "type": "module",
+  "scripts": {
+    "dev": "vite web",
+    "build": "vite build web --outDir ../dist",
+    "preview": "vite preview web"
+  },
+  "dependencies": {
+    "katex": "^0.16.11"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.7",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  }
+}

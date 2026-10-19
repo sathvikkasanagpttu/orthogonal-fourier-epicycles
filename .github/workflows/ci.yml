@@ -1,0 +1,89 @@
+name: CI & GitHub Pages Deployment
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  test:
+    name: Python Unit Tests & Atlas Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libpango1.0-dev libcairo2-dev
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Pytest Suite
+        run: |
+          pytest -v tests/
+
+      - name: Validate Atlas Integrity
+        run: |
+          python scripts/validate_atlas.py
+
+  build:
+    name: Build Web App & Bundle Assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install Node dependencies
+        run: |
+          npm ci || npm install
+
+      - name: Build Web Application
+        run: |
+          npm run build
+
+      - name: Upload Pages Artifact
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    needs: [test, build]
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
