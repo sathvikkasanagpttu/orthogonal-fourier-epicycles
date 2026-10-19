@@ -67,9 +67,16 @@ class WorldAtlasApp {
     this.loadIndex();
   }
 
+  private getAtlasUrl(relPath: string): string {
+    const base = import.meta.env.BASE_URL || "./";
+    const normalizedBase = base.endsWith("/") ? base : `${base}/`;
+    const cleanRel = relPath.startsWith("/") ? relPath.slice(1) : relPath;
+    return `${normalizedBase}${cleanRel}`;
+  }
+
   private async loadIndex(): Promise<void> {
     try {
-      const res = await fetch("/atlas/index.json");
+      const res = await fetch(this.getAtlasUrl("atlas/index.json"));
       if (!res.ok) throw new Error(`HTTP error ${res.status}`);
       this.indexEntries = await res.json();
       this.renderSidebarList();
@@ -83,9 +90,9 @@ class WorldAtlasApp {
 
   public async selectMap(mapId: string): Promise<void> {
     const entry = this.indexEntries.find((e) => e.id === mapId);
-    let filePath = `/atlas/maps/${mapId}.json`;
+    let filePath = this.getAtlasUrl(`atlas/maps/${mapId}.json`);
     if (entry && entry.file) {
-      filePath = `/atlas/${entry.file}`;
+      filePath = this.getAtlasUrl(`atlas/${entry.file}`);
     }
 
     try {

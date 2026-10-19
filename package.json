@@ -4,9 +4,9 @@
   "description": "Orthogonal Fourier Epicycles: World Atlas Edition",
   "type": "module",
   "scripts": {
-    "dev": "vite web",
-    "build": "vite build web --outDir ../dist",
-    "preview": "vite preview web"
+    "dev": "vite --base=./ web",
+    "build": "vite build --base=./ web --outDir ../dist",
+    "preview": "vite preview --base=./ web"
   },
   "dependencies": {
     "katex": "^0.16.11"
