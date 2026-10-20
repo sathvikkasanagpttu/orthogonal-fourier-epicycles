@@ -2,7 +2,11 @@
 
 An interactive, production-grade geospatial and mathematical visualization system that reconstructs and animates the closed boundary of **any country in the world** (plus 7 continents and the entire world landmass) using **two independent real Fourier series**, $x(t)$ and $y(t)$. Each axis is animated as its own chain of rotating circles (epicycles) whose orthogonal dashed projection lines intersect with mathematical precision at the moving drawing point $\mathbf{P}(t)$.
 
-![Orthogonal Fourier Epicycles Preview](output/preview_frame.png)
+<p align="center">
+  <img src="output/demo_preview.gif" alt="Orthogonal Fourier Epicycles Animation" width="420" />
+  <br>
+  <em>Dual independent real Fourier epicycles: X chain (cyan, top-left) and Y chain (gold, bottom-right) meeting perpendicularly at P(t) to trace the boundary.</em>
+</p>
 
 ---
 
@@ -119,6 +123,7 @@ fourier-epicycles/
 │   ├── error_analysis.ipynb       # Single-country India error analysis
 │   └── world_atlas_analysis.ipynb # 10 countries + World log-log decay & fractals
 ├── output/
+│   ├── demo_preview.gif           # Animated demonstration preview
 │   ├── preview_frame.png          # High-resolution rendered preview
 │   ├── atlas_error_decay_loglog.png # 10-country log-log error comparison
 │   ├── shape_complexity_leaderboard.csv # Curated shape difficulty table
